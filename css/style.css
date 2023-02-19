@@ -5,7 +5,7 @@ body{
 
 
 .header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 90%;
@@ -100,12 +100,203 @@ body{
     width: 60px;
     height: 60px;
     background: transparent;
-    border: 2px solid#0ef ;
+    border: 2px solid #0ef ;
     border-radius: 50%;
     text-decoration: none;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css for the  mobile */
+
+@media(max-width:480px){
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 90%;
+        padding: 20px 20px;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        z-index: 0;  
+    }
+    
+    .navbar a{
+        font-family: 'Playfair Display', serif;
+        color: rgb(0, 3, 6);
+        font-size: 24px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-left: 0px;
+        letter-spacing: 1px;
+        transition: .3s;
+    }
+    
+    .logo{
+        font-size: 15px;
+        font-weight: 200;
+        font-family: 'Playfair Display', serif;
+        color: #0ef;
+        text-decoration: none;
+        cursor: default;
+    
+    }
+    
+    .navbar a:hover,
+    .navbar a.active {
+        
+        background-color: rgba(54, 225, 234, 0.479);  
+    }
+    
+    
+    
+    .homecontent {
+        margin-top: 10%;
+        position: relative;
+        justify-content: space-between ;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        
+        
+     
+    }
+    
+    .contentdeatil{
+        padding-left: 5%;
+        position: absolute;
+        top: 450px;
+        right: 10px;
+        
+    }
+    .contentdeatil h2{
+        font-size: 14px;
+        font-weight: 400;
+    
+    }
+    .contentdeatil h1 span{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    
+    
+    .mainname{
+        color: #0ef;
+        font-weight: 800;
+        
+     }
+     .mainname b{
+        font-size: 50px;
+     }
+    
+    
+    .home img{
+      
+       width: 550px;
+       height: 374px;
+       position: absolute;
+       float: inherit;
+       border-radius: 50%;
+       top: 40px;
+       right: 0px;
+       
+    }
+
+    .image{
+        
+        padding: 10px 20px 0px;
+        
+        
+    }
+    .aboutme{
+        font-family: 'Playfair Display', serif;
+        font-size: 14px;
+        font-weight: 800;
+        justify-content: left;
+    
+    
+    }
+    .socialmedia a{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid#0ef ;
+        border-radius: 50%;
+        text-decoration: none;
+    
+    }
+
+}
+
+
+
+
+/* css for the  tablet 
+
+@media(max-width:1080px){
+
+    
+    .home img{
+      
+        width: 550px;
+        height: 374px;
+        position: absolute;
+        float: inherit;
+        border-radius: 50%;
+        top: 40px;
+        right: 0px;
+        
+     }
+ 
+     .image{
+         
+         padding: 10px 20px 0px;
+         
+     }
+
+     
+    .contentdeatil{
+        padding-left: 5%;
+        position: absolute;
+        top: 850px;
+        right: 10px;
+        
+    }
+     
+
+     
+
+
+
+
+
+
+
+}
+
+*/
 
 
 
